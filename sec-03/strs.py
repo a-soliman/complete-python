@@ -12,3 +12,12 @@ print(x.title())
 print(x.capitalize())
 
 print(x.lower().split())
+
+name = 'Adam'
+
+print('Hello, {}!'.format(name))
+print('The {2} {1} {0}'.format('fox', 'brown', 'quick'))
+print('The {q} {b} {f}'.format(f='fox', b='brown', q='quick'))
+
+# f STRING or formated string let.
+print(f'Hello, his name is {name}')
