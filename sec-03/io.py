@@ -12,3 +12,10 @@ file.close()
 
 print(content)
 print(content_list)
+
+
+# Best Practice
+with open('test.txt') as new_file:
+    contents = new_file.read()
+
+    print(contents)
