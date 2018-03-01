@@ -22,3 +22,22 @@ d = {'k1': 1, 'k2': 2, 'k3': 3}
 
 for key, value in d.items():
     print(key)
+
+
+print('=' * 20 )
+
+# zipping
+l1 = [1,2,3,4]
+l2 = ['a', 'b', 'c', 'd']
+
+for item in zip(l1,l2):
+    print(item)
+
+
+# enumerate
+
+word = 'hello world'
+
+for index, letter in enumerate(word):
+    print(index, letter)
+
