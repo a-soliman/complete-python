@@ -19,3 +19,8 @@ with open('test.txt') as new_file:
     contents = new_file.read()
 
     print(contents)
+
+
+with open('test.txt', 'w+') as new_file:
+    new_file.write('This is a new appended line')
+    print(new_file.read())
