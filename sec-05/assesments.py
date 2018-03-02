@@ -21,3 +21,11 @@ print( '-'*20)
 
 l1 = [ num for num in range(0,11) if num %2 == 0 ]
 print(l1)
+
+#---------------------------------------------------
+print( '-'*20)
+#---------------------------------------------------
+
+# use list-comprehenssion to create a list bet 1:50 that are dev by 3
+l2 = [ num for num in range(1, 51) if num %3 == 0]
+print(l2)
