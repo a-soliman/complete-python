@@ -29,3 +29,20 @@ print( '-'*20)
 # use list-comprehenssion to create a list bet 1:50 that are dev by 3
 l2 = [ num for num in range(1, 51) if num %3 == 0]
 print(l2)
+
+#---------------------------------------------------
+print( '-'*20)
+#---------------------------------------------------
+
+# Go through the string below and if the length of the word is even print even
+
+st = 'Print even word in this sentence that has an even number of letters'
+
+l3 = st.split()
+
+for word in l3:
+      if len(word) % 2 == 0:
+            print('Even')
+      else:
+            print('ODD!')
+
