@@ -61,3 +61,14 @@ for i in range(0, 101):
             print('Fizz')
       else:
             print(i)
+
+#---------------------------------------------------
+print( '-'*20)
+#---------------------------------------------------
+
+# use list-comprehension to create a list of every 1st letter of the string below
+
+st2 = 'Create a list of the first letters of every word in this string'
+l5 = st2.split()
+l6 = [ x[0] for x in st2.split() ]
+print(l6)
