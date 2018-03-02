@@ -11,7 +11,13 @@ def words_with_s( str ):
 
       return new_str
 
-
-
-
 print(words_with_s('Print only the words that start with s in this sentence'))
+
+#---------------------------------------------------
+print( '-'*20)
+#---------------------------------------------------
+
+# use rangge to print out all the even nums from 0 to 10
+
+l1 = [ num for num in range(0,11) if num %2 == 0 ]
+print(l1)
