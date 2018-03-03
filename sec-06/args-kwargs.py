@@ -26,3 +26,14 @@ def myfunc3( **kwargs ):
     print('His name is {}, he is {} years old, and he lives in {}.'.format(kwargs['name'], kwargs['age'], kwargs['city']))
 
 myfunc3(name='Ahmed', age=30, city='San Fran')
+
+#===================================
+print('='*10)
+#===================================
+
+# *args + **kwargs
+def func4( *args, **kwargs ):
+    print('I need to buy {} {}.'.format(args[0], kwargs['food']))
+
+
+func4(12,13,14, fruit="Banana", food="egg")
