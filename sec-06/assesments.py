@@ -14,8 +14,9 @@ def lesser_of_two( a,b ):
 print(lesser_of_two(2,4))
 print(lesser_of_two(2,5))
 
+#------------------------------------
 print('='*20)
-
+#------------------------------------
 # Animal crackers:
 # write a func takes 2 string and return true if both words begin with same letter
 
@@ -25,6 +26,10 @@ def animal_crackers( string1, string2):
 
 print(animal_crackers('Levis', 'Llama'))
 print(animal_crackers('Levis', 'kangaroo'))
+
+#------------------------------------
+print('='*20)
+#------------------------------------
 
 # old_macdonald
 # write a function that capitalize the 1st and forth letter of a name
@@ -43,6 +48,12 @@ def old_macdonald( name ) :
     return new_name
 
 print(old_macdonald('oldmacdonald'))
+
+
+#------------------------------------
+print('='*20)
+#------------------------------------
+
 
 # given a sentence, retur a sentence with the words reversed
 
@@ -63,6 +74,11 @@ def master_yoda( sentence ):
 print(master_yoda('I am home'))
 print(master_yoda('we are ready'))
 
+#------------------------------------
+print('='*20)
+#------------------------------------
+
+
 # almost_there 
 # Given an int n, return True if n is within 10 of either 100 or 200.
 def almost_there( n ):
@@ -73,3 +89,58 @@ print(almost_there(90)) # True
 print(almost_there(104)) # True
 print(almost_there(150)) # False
 print(almost_there(209)) # True
+
+#------------------------------------
+print('='*20)
+#------------------------------------
+
+
+# laughter
+# write a function that counts the number of times a given pattern appers in a string, including overlap
+
+def laughter( pattern, string):
+    count = 0
+
+    for i in range( 0, len(string)):
+        if string[i] == pattern[0]:
+            if string[i: i+ len(pattern):] == pattern:
+                count = count + 1
+    return count
+
+print(laughter('hah', 'hahahah')) # --> 3
+
+#------------------------------------
+print('='*20)
+#------------------------------------
+
+# paper_doll
+# given a string return string where for every char in the original there are thre chars.reversed
+
+def paper_doll( string ):
+    new_str = ''
+
+    for letter in string:
+        new_str += letter *3
+    return new_str
+
+print(paper_doll('Hello'))
+print(paper_doll('Mississippi'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
