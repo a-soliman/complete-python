@@ -16,3 +16,13 @@ def sum_nums( *args ):
     return sum(args)
 
 print(sum_nums(1,2,3,4,5,6,78,9))
+
+#===================================
+print('='*10)
+#===================================
+
+#**kwargs
+def myfunc3( **kwargs ):
+    print('His name is {}, he is {} years old, and he lives in {}.'.format(kwargs['name'], kwargs['age'], kwargs['city']))
+
+myfunc3(name='Ahmed', age=30, city='San Fran')
