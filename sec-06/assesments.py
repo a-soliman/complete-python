@@ -25,3 +25,21 @@ def animal_crackers( string1, string2):
 
 print(animal_crackers('Levis', 'Llama'))
 print(animal_crackers('Levis', 'kangaroo'))
+
+# old_macdonald
+# write a function that capitalize the 1st and forth letter of a name
+
+def old_macdonald( name ) :
+    if len(name) < 4:
+        return name.capitalize()
+    
+    new_name = ''
+    for i in range(0, len(name)):
+        if i == 0 or i == 3:
+            new_name += name[i].upper()
+        else:
+            new_name += name[i]
+    
+    return new_name
+
+print(old_macdonald('oldmacdonald'))
