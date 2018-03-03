@@ -197,14 +197,22 @@ print('='*20)
 # write  a func that takes in a list of integers and returns True if contains 007 in order
 
 def spy_game( arr ):
-    s = ''
-    for num in arr:
-        s += str(num)
-    
-    return '007' in s
+    spy = [0,0,7]
+
+    i = 0
+    j = 0
+
+    while i < len(arr):
+        if arr[i] == spy[j]:
+            j = j + 1
+            if j  == len(spy):
+                return True
+        i = i + 1
+    return False
 
 print(spy_game([1,2,4,0,0,7,5]))
-
+print(spy_game([1,0,2,4,0,5,7]))
+print(spy_game([1,7,2,0,4,5,0]))
 
 
 
