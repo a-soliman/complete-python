@@ -154,6 +154,53 @@ print(blackjack(5,6,7)) # --> 18
 print(blackjack(9,9,9)) # --> 'BUST'
 print(blackjack(9,9,11)) # --> 19
 
+#------------------------------------
+print('='*20)
+#------------------------------------
+
+# summer_69
+# return the sum of nums in arr, except ignore sections of 
+# nums starting with a 6 and extending to the next 9 
+# (every 6 will be followed by at least one 9),
+# return 0 for no numbers.
+
+def summer_69( arr ):
+    total = 0
+
+    if not 6 in arr:
+        for num in arr:
+            total = total + num
+    else:
+        start = arr.index(6)
+        end = arr.index(9)
+
+        for i in range(0, len(arr)):
+            if i < start or i > end:
+                total += arr[i]
+    
+    return total
+
+              
+
+
+
+print(summer_69([1,3,5])) # --> 9
+print(summer_69([4,5,6,7,8,9])) # --> 9
+print(summer_69([2,1,6,9,11])) # --> 14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
