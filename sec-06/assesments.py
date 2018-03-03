@@ -189,11 +189,21 @@ print(summer_69([4,5,6,7,8,9])) # --> 9
 print(summer_69([2,1,6,9,11])) # --> 14
 
 
+#------------------------------------
+print('='*20)
+#------------------------------------
 
+# spy_game
+# write  a func that takes in a list of integers and returns True if contains 007 in order
 
+def spy_game( arr ):
+    s = ''
+    for num in arr:
+        s += str(num)
+    
+    return '007' in s
 
-
-
+print(spy_game([1,2,4,0,0,7,5]))
 
 
 
