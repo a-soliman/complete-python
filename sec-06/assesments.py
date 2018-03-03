@@ -126,11 +126,33 @@ def paper_doll( string ):
 print(paper_doll('Hello'))
 print(paper_doll('Mississippi'))
 
+#------------------------------------
+print('='*20)
+#------------------------------------
+
+# blackjack
+# given thre ints, between 1 and 11, if their sum is less
+# than 21, reutrn their sum, if thier sum exceeds 21
+# and ther's an eleven, reduce the total sum by 10,
+# finally if the sum exceeds 21 return 'BUST 
+
+def blackjack( a, b, c):
+    total = a + b + c
+
+    if total < 21:
+        return total
+    else:
+        if a == 11 or b == 11 or c == 11:
+            total = total - 10
+            if total < 21:
+                return total
+    
+    return 'BUST'
 
 
-
-
-
+print(blackjack(5,6,7)) # --> 18
+print(blackjack(9,9,9)) # --> 'BUST'
+print(blackjack(9,9,11)) # --> 19
 
 
 
