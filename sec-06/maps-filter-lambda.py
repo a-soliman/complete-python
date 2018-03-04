@@ -36,3 +36,13 @@ names = ['Ahmed', 'Mike', 'Jack', 'Adam']
 names_with_a = list(filter(starts_with_a, names))
 
 print(names_with_a)
+
+# lambda
+
+square = lambda num: num **2
+starts_with_a = lambda name: name[0].lower() == 'a'
+print(square(5))
+print(starts_with_a('mike'))
+
+names_with_m = list(filter(lambda name: name[0].lower() == 'm', names))
+print(names_with_m)
