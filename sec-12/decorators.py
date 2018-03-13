@@ -35,11 +35,26 @@
 
 # passing a func as param
 
-def hello(name='Ahmed'):
-      return 'Hey {}'.format(name)
+# def hello(name='Ahmed'):
+#       return 'Hey {}'.format(name)
 
-def other_func(func):
-      print('This is the other_func()')
-      print(func())
+# def other_func(func):
+#       print('This is the other_func()')
+#       print(func())
 
-other_func(hello)
+# other_func(hello)
+
+
+def new_decorator(original_func):
+      def wrap_func():
+            print('some extra code, before the original function')
+            original_func()
+            print('some extra code, after the originl function')
+      
+      return wrap_func()
+
+
+def func_needs_decorator():
+      print(' I want to be decorated')
+
+decorated_func = new_decorator(func_needs_decorator)
