@@ -12,3 +12,6 @@ print(Counter(s))
 sentence = 'How many times does each word show up in this sentence word word word sentence word'
 words = sentence.split()
 print(Counter(words))
+
+c = Counter(words)
+print(c.most_common(1))
