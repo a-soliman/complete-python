@@ -14,4 +14,6 @@ words = sentence.split()
 print(Counter(words))
 
 c = Counter(words)
-print(c.most_common(1))
+print(c.most_common(2))
+
+print(sum(c.values))
