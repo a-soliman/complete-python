@@ -8,3 +8,7 @@ print(Counter(l))
 
 s = 'asdasdasdaassdd'
 print(Counter(s))
+
+sentence = 'How many times does each word show up in this sentence word word word sentence word'
+words = sentence.split()
+print(Counter(words))
