@@ -19,3 +19,7 @@ print('Hello World'.isupper())
 
 print('hello'.endswith('o'))
 print('hello'.startswith('h'))
+
+sentence = 'Hello this is me from the office'
+words = sentence.split()
+print(words)
