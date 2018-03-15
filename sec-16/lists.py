@@ -7,3 +7,4 @@ print(l)
 
 print(l.count(1))
 
+x = l.copy()
