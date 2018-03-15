@@ -13,3 +13,5 @@ x.append([5,6,7])
 x.extend([8,9,10])
 
 print(x)
+print(x.index(10))
+
