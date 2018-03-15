@@ -9,4 +9,6 @@ print(s.find('h'))
 
 print(s.center(20, '='))
 
-
+print('hello'.isalnum())
+print('hello'.isnumeric())
+print('hello'.isalpha())
