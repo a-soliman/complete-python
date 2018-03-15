@@ -5,3 +5,5 @@ l = l + [1]
 
 print(l)
 
+print(l.count(1))
+
