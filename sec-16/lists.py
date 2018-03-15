@@ -18,3 +18,6 @@ print(x.index(10))
 x.insert(0, 'Inserted')
 print(x)
 
+x.pop()
+print(x)
+
