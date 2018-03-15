@@ -21,3 +21,10 @@ print(x)
 x.pop()
 print(x)
 
+x.remove(1)
+print(x)
+
+x.reverse
+x.sort
+
+print(x)
