@@ -7,4 +7,6 @@ print(s.lower())
 print(s.count('o'))
 print(s.find('h'))
 
+print(s.center(20, '='))
+
 
