@@ -16,3 +16,6 @@ print('hello'.isalpha())
 print('Hello World'.istitle())
 print('Hello World'.islower())
 print('Hello World'.isupper())
+
+print('hello'.endswith('o'))
+print('hello'.startswith('h'))
