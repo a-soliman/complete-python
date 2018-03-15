@@ -12,3 +12,7 @@ print(s.center(20, '='))
 print('hello'.isalnum())
 print('hello'.isnumeric())
 print('hello'.isalpha())
+
+print('Hello World'.istitle())
+print('Hello World'.islower())
+print('Hello World'.isupper())
